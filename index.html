@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping Store</title>
+</head>
+
+<body>
+
+  <div class="booking-box">
+
+    <h1>🛒 Online Shopping Store</h1>
+
+    <label>Choose Product</label>
+
+    <select id="product">
+      <option value="50">Headphones - $50</option>
+      <option value="100">Shoes - $100</option>
+      <option value="30">T-Shirt - $30</option>
+      <option value="200">Smart Watch - $200</option>
+    </select>
+
+    <label>Quantity</label>
+
+    <input type="number" id="quantity" value="1" min="1" max="20">
+
+    <label>Delivery Option</label>
+
+    <select id="delivery">
+      <option value="5">Standard Delivery - $5</option>
+      <option value="15">Express Delivery - $15</option>
+      <option value="25">Same Day Delivery - $25</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="gift">
+      Add Gift Wrapping - $5
+    </label>
+
+    <button onclick="placeOrder()">PLACE ORDER</button>
+
+    <div id="result"></div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
